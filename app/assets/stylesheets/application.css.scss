@@ -10,6 +10,61 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require animate
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap";
+
+$core-blue: #037dae;
+
+.jumbo {
+  height: 350px;
+  background: url(/assets/independence.jpg);
+  background-size: 100%;
+  padding: 70px;
+  .call-to-action {
+    color: white;
+    font-size: 180%;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    opacity: 0.5;
+    background-color: blue;
+  }
+}
+
+.content {
+  margin: 30px auto;
+  width: 70%;
+  .big-content {
+    font-size: 150%;
+    color: $core-blue;
+  }
+}
+
+.rias {
+  .headshots {
+    .headshot {
+      display: inline-block;
+      min-width: 100px;
+      img {
+        max-width: 200px;
+        display: block;
+      }
+      .name {
+        margin: 0 auto;
+      }
+    }
+  }
+  .bios {
+    width: 100%;
+    .bio {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  }
+}
